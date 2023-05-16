@@ -21,6 +21,7 @@ Supported Orientations: Portrait & Upside Down (all devices), Landscape (iPad On
 
 The files for this project are all located within the Message-Center-App main folder
 
+```
 Message-Center-App
 ├── AppDelegate.swift
 ├── Info.plist
@@ -46,4 +47,4 @@ Message-Center-App
 │   ├── MessageTableViewCell.swift & .xib
 │   └── SearchButton.swift
 
-
+```
