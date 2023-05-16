@@ -30,6 +30,8 @@ class LookupViewController: UIViewController {
                                                name: NSNotification.Name(rawValue: "EnableSearchButton"),
                                                object: nil
         )
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     // MARK: Observer Methods
@@ -52,7 +54,50 @@ extension LookupViewController {
     
     @IBAction func SearchButtonSelected(_ sender: SearchButton) {
         sender.isLoading = true
+        getMessagesByEmail()
     }
 
+}
+
+//MARK: Public Functions
+extension LookupViewController {
+
+    public func getMessagesByEmail() {
+        guard let email = emailFormField.formTextField.text else {
+            return
+        }
+        
+        MessageService.getAllMessages(for: email, completion: { (success, messages, errorMessage) in
+            DispatchQueue.main.async {
+                if success,
+                let messages = messages {
+                    self.navigateToResultsTableView(messages)
+                    self.searchButton.isLoading = false
+                    self.searchButton.enabledState()
+                } else {
+                    self.displayAlertMessage(errorMessage ?? "Unknown Error")
+                    self.searchButton.isLoading = false
+                }
+            }
+        })
+    }
+    
+    public func displayAlertMessage(_ errorMessage: String) {
+        let alertMessage = UIAlertController(title: "An Error Has Occured", message: errorMessage, preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            self.searchButton.enabledState()
+         })
+        alertMessage.addAction(ok)
+
+        self.present(alertMessage, animated: true)
+    }
+    
+    public func navigateToResultsTableView(_ messages: [Message]) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let resultsTableViewController = storyBoard.instantiateViewController(withIdentifier: "ResultsTableViewController") as! ResultsTableViewController
+        resultsTableViewController.messages = messages
+        self.navigationController?.pushViewController(resultsTableViewController, animated: true)
+    }
 }
 

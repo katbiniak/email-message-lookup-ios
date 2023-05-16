@@ -83,7 +83,6 @@ class SearchButton: UIButton {
 // MARK: Public Methods
 extension SearchButton {
 
-    @objc
     public func enabledState() {
         DispatchQueue.main.async {
             self.isEnabled = true
@@ -92,7 +91,6 @@ extension SearchButton {
         }
     }
     
-    @objc
     public func disabledState() {
         DispatchQueue.main.async {
             self.isEnabled = false

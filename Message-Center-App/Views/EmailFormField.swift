@@ -55,7 +55,6 @@ extension EmailFormField {
     
     public func validateText(_ text:String) -> Bool {
         let valid = validateRegex.evaluate(with: text)
-        print(valid)
         self.shouldHideErrorLabel(valid)
         return valid
     }
