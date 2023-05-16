@@ -12,7 +12,7 @@ class ResultsTableViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var resultsTableView: UITableView!
     
     var messages: [Message]?
-    let headerHeight:CGFloat = 40
+    let headerHeight:CGFloat = 70
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,7 @@ class ResultsTableViewController: UIViewController, UITableViewDelegate, UITable
         resultsTableView.delegate = self
         
         resultsTableView.register(UINib(nibName: "MessageTableViewCell", bundle: nil), forCellReuseIdentifier: "messageTableViewCell")
+        resultsTableView.sectionHeaderTopPadding = 0
     }
 
     // MARK: Table view data source
@@ -42,7 +43,7 @@ class ResultsTableViewController: UIViewController, UITableViewDelegate, UITable
         headerView.backgroundColor = UIColor.white
 
         let titleLabel = UILabel()
-        titleLabel.frame = CGRect.init(x: 40, y: 0, width: headerView.frame.width-45, height: headerView.frame.height-20)
+        titleLabel.frame = CGRect.init(x: 40, y: 0, width: headerView.frame.width-45, height: headerView.frame.height)
         titleLabel.text = "Message Center"
         titleLabel.font = UIFont(name: "Poppins-Bold", size: 16)
         titleLabel.textColor = UIColor.mcDarkBlue
