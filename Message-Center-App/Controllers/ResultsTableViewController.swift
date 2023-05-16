@@ -40,7 +40,11 @@ class ResultsTableViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: headerHeight))
-        headerView.backgroundColor = UIColor.white
+        if traitCollection.userInterfaceStyle == .dark {
+            headerView.backgroundColor = UIColor.black
+        } else {
+            headerView.backgroundColor = UIColor.white
+        }
 
         let titleLabel = UILabel()
         titleLabel.frame = CGRect.init(x: 40, y: 0, width: headerView.frame.width-45, height: headerView.frame.height)
