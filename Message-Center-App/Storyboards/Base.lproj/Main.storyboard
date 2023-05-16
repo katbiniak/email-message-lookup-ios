@@ -30,13 +30,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeV-1n-v61">
-                                <rect key="frame" x="98.666666666666686" y="134" width="196" height="34"/>
+                                <rect key="frame" x="108.33333333333333" y="134" width="176.33333333333337" height="28"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                 <color key="textColor" name="SteelBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email to search for your messages" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM8-I8-vNk">
-                                <rect key="frame" x="40" y="198" width="313" height="45"/>
+                                <rect key="frame" x="40" y="192" width="313" height="37.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                 <color key="textColor" name="SteelBlue"/>
                                 <nil key="highlightedColor"/>
@@ -49,13 +49,20 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Search"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="currentlyEnabledState" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="currentlyEnabledState" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isLoading" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SearchButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8oK-MF-nhf"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNk-Za-11P" customClass="EmailFormField" customModule="Message_Center_App" customModuleProvider="target">
+                                <rect key="frame" x="40" y="269.33333333333331" width="313" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="AIY-YN-Z68"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,19 +73,27 @@
                             <constraint firstItem="ZM8-I8-vNk" firstAttribute="centerX" secondItem="EeV-1n-v61" secondAttribute="centerX" id="RtP-fd-15t"/>
                             <constraint firstItem="N96-cB-xib" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WId-cf-Bpj"/>
                             <constraint firstItem="ZM8-I8-vNk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XI0-vX-ORE"/>
+                            <constraint firstItem="vNk-Za-11P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="YAZ-0i-tMf"/>
                             <constraint firstItem="N96-cB-xib" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZZL-3R-0TF"/>
                             <constraint firstItem="eBn-n5-AHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ZwF-hd-pw9"/>
+                            <constraint firstItem="vNk-Za-11P" firstAttribute="centerX" secondItem="ZM8-I8-vNk" secondAttribute="centerX" id="bVk-NC-FiF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vNk-Za-11P" secondAttribute="trailing" constant="40" id="blo-8t-A21"/>
                             <constraint firstItem="eBn-n5-AHJ" firstAttribute="centerX" secondItem="ZM8-I8-vNk" secondAttribute="centerX" id="cmu-ab-FzN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eBn-n5-AHJ" secondAttribute="bottom" constant="60" id="njx-3X-9j7"/>
                             <constraint firstItem="N96-cB-xib" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="osr-Hm-UV1"/>
                             <constraint firstItem="EeV-1n-v61" firstAttribute="top" secondItem="N96-cB-xib" secondAttribute="bottom" constant="5" id="rHO-Uq-iOz"/>
                             <constraint firstItem="ZM8-I8-vNk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uRn-8F-ljh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="N96-cB-xib" secondAttribute="trailing" constant="16" id="uvx-3a-JXr"/>
+                            <constraint firstItem="vNk-Za-11P" firstAttribute="top" secondItem="ZM8-I8-vNk" secondAttribute="bottom" constant="40" id="v5f-fR-Z3A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZM8-I8-vNk" secondAttribute="trailing" constant="40" id="wFq-MN-CAv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="SearchButton" destination="eBn-n5-AHJ" id="EaC-Wl-cdW"/>
+                        <outlet property="emailFormField" destination="vNk-Za-11P" id="YVe-tW-nb4"/>
+                        <outlet property="logoImageView" destination="N96-cB-xib" id="DZN-b5-nZe"/>
+                        <outlet property="searchButton" destination="eBn-n5-AHJ" id="yBO-m3-mw7"/>
+                        <outlet property="subtitleLabel" destination="ZM8-I8-vNk" id="ZKt-XA-aYC"/>
+                        <outlet property="titleLabel" destination="EeV-1n-v61" id="mUx-mx-Nz4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

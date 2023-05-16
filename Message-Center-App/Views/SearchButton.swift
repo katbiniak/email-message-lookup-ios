@@ -28,6 +28,7 @@ class SearchButton: UIButton {
         }
     }
 
+    // MARK: Init Overrides
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupSearchButton()
@@ -38,6 +39,7 @@ class SearchButton: UIButton {
         setupSearchButton()
     }
     
+    // MARK: Setup Methods
     private func setupSearchButton() {
         layer.cornerRadius = self.frame.height / 2
         
@@ -50,7 +52,7 @@ class SearchButton: UIButton {
         
         loadingSpinner.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            loadingSpinner.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            loadingSpinner.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -60),
             loadingSpinner.centerYAnchor.constraint(equalTo: self.centerYAnchor)
         ])
 
@@ -68,18 +70,20 @@ class SearchButton: UIButton {
     private func updateLoadingState() {
         if isLoading {
             loadingSpinner.startAnimating()
-            self.titleLabel?.alpha = 0
             self.isEnabled = false
+            self.setTitle("Searching", for: .normal)
         } else {
             loadingSpinner.stopAnimating()
-            self.titleLabel?.alpha = 1
+            self.setTitle("Search", for: .normal)
             self.isEnabled = true
         }
     }
 }
 
+// MARK: Public Methods
 extension SearchButton {
 
+    @objc
     public func enabledState() {
         DispatchQueue.main.async {
             self.isEnabled = true
@@ -88,6 +92,7 @@ extension SearchButton {
         }
     }
     
+    @objc
     public func disabledState() {
         DispatchQueue.main.async {
             self.isEnabled = false

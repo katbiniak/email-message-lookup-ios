@@ -16,9 +16,10 @@
 		5EA8A0A32A12DEA200D43B1C /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0A22A12DEA200D43B1C /* Poppins-Regular.ttf */; };
 		5EA8A0A62A12E2FE00D43B1C /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0A52A12E2FE00D43B1C /* SearchButton.swift */; };
 		5EA8A0B12A12F63D00D43B1C /* UIColor+MessageCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B02A12F63D00D43B1C /* UIColor+MessageCenter.swift */; };
-		5EA8A0B32A13007300D43B1C /* FormField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B22A13007300D43B1C /* FormField.xib */; };
-		5EA8A0B52A13009000D43B1C /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B42A13009000D43B1C /* FormField.swift */; };
+		5EA8A0B32A13007300D43B1C /* EmailFormField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B22A13007300D43B1C /* EmailFormField.xib */; };
+		5EA8A0B52A13009000D43B1C /* EmailFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B42A13009000D43B1C /* EmailFormField.swift */; };
 		5EA8A0B82A13048500D43B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B62A13048400D43B1C /* Main.storyboard */; };
+		5EA8A0BA2A130EED00D43B1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B92A130EED00D43B1C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,10 @@
 		5EA8A0A22A12DEA200D43B1C /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		5EA8A0A52A12E2FE00D43B1C /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		5EA8A0B02A12F63D00D43B1C /* UIColor+MessageCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MessageCenter.swift"; sourceTree = "<group>"; };
-		5EA8A0B22A13007300D43B1C /* FormField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormField.xib; sourceTree = "<group>"; };
-		5EA8A0B42A13009000D43B1C /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		5EA8A0B22A13007300D43B1C /* EmailFormField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailFormField.xib; sourceTree = "<group>"; };
+		5EA8A0B42A13009000D43B1C /* EmailFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFormField.swift; sourceTree = "<group>"; };
 		5EA8A0B72A13048400D43B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EA8A0B92A130EED00D43B1C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				5EA8A0A52A12E2FE00D43B1C /* SearchButton.swift */,
-				5EA8A0B22A13007300D43B1C /* FormField.xib */,
-				5EA8A0B42A13009000D43B1C /* FormField.swift */,
+				5EA8A0B22A13007300D43B1C /* EmailFormField.xib */,
+				5EA8A0B42A13009000D43B1C /* EmailFormField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				5EA8A0B02A12F63D00D43B1C /* UIColor+MessageCenter.swift */,
+				5EA8A0B92A130EED00D43B1C /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -187,7 +190,7 @@
 				5E4E843C2A1080AA0078C3C5 /* Assets.xcassets in Resources */,
 				5EA8A0B82A13048500D43B1C /* Main.storyboard in Resources */,
 				5EA8A0A32A12DEA200D43B1C /* Poppins-Regular.ttf in Resources */,
-				5EA8A0B32A13007300D43B1C /* FormField.xib in Resources */,
+				5EA8A0B32A13007300D43B1C /* EmailFormField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,13 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EA8A0B52A13009000D43B1C /* FormField.swift in Sources */,
+				5EA8A0B52A13009000D43B1C /* EmailFormField.swift in Sources */,
 				5EA8A0B12A12F63D00D43B1C /* UIColor+MessageCenter.swift in Sources */,
 				5EA8A0A62A12E2FE00D43B1C /* SearchButton.swift in Sources */,
 				5E4E84502A10814D0078C3C5 /* ResultsTableViewController.swift in Sources */,
 				5E4E84332A1080A70078C3C5 /* AppDelegate.swift in Sources */,
 				5E4E84512A10814D0078C3C5 /* LookupViewController.swift in Sources */,
 				5E4E84352A1080A70078C3C5 /* SceneDelegate.swift in Sources */,
+				5EA8A0BA2A130EED00D43B1C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
