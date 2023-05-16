@@ -11,7 +11,7 @@ This repo contains the code to run the Message Center Application, an iOS applic
 
 **Xcode Version: 14.3**  
 
-No cocoa pods install is needed for running this application locally. Just download the project and open the .xcodeproj in Xcode.
+No cocoa pods install is needed for running this application locally. Just download the project and open the .xcodeproj in Xcode.  
 Min Supported iOS Version: 15.0+  
 
 Supported Devices: iPhone & iPad  
