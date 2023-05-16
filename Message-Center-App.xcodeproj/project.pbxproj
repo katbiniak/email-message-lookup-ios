@@ -11,9 +11,15 @@
 		5E4E84352A1080A70078C3C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E84342A1080A70078C3C5 /* SceneDelegate.swift */; };
 		5E4E843C2A1080AA0078C3C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E843B2A1080AA0078C3C5 /* Assets.xcassets */; };
 		5E4E844B2A10812D0078C3C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E84472A10812D0078C3C5 /* LaunchScreen.storyboard */; };
-		5E4E844C2A10812D0078C3C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E84492A10812D0078C3C5 /* Main.storyboard */; };
 		5E4E84502A10814D0078C3C5 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E844E2A10814D0078C3C5 /* ResultsTableViewController.swift */; };
 		5E4E84512A10814D0078C3C5 /* LookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E844F2A10814D0078C3C5 /* LookupViewController.swift */; };
+		5EA8A0A32A12DEA200D43B1C /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0A22A12DEA200D43B1C /* Poppins-Regular.ttf */; };
+		5EA8A0A62A12E2FE00D43B1C /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0A52A12E2FE00D43B1C /* SearchButton.swift */; };
+		5EA8A0B12A12F63D00D43B1C /* UIColor+MessageCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B02A12F63D00D43B1C /* UIColor+MessageCenter.swift */; };
+		5EA8A0B32A13007300D43B1C /* EmailFormField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B22A13007300D43B1C /* EmailFormField.xib */; };
+		5EA8A0B52A13009000D43B1C /* EmailFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B42A13009000D43B1C /* EmailFormField.swift */; };
+		5EA8A0B82A13048500D43B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B62A13048400D43B1C /* Main.storyboard */; };
+		5EA8A0BA2A130EED00D43B1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B92A130EED00D43B1C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +29,15 @@
 		5E4E843B2A1080AA0078C3C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E4E84402A1080AA0078C3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E4E84482A10812D0078C3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5E4E844A2A10812D0078C3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E4E844E2A10814D0078C3C5 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		5E4E844F2A10814D0078C3C5 /* LookupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookupViewController.swift; sourceTree = "<group>"; };
+		5EA8A0A22A12DEA200D43B1C /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		5EA8A0A52A12E2FE00D43B1C /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
+		5EA8A0B02A12F63D00D43B1C /* UIColor+MessageCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MessageCenter.swift"; sourceTree = "<group>"; };
+		5EA8A0B22A13007300D43B1C /* EmailFormField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailFormField.xib; sourceTree = "<group>"; };
+		5EA8A0B42A13009000D43B1C /* EmailFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFormField.swift; sourceTree = "<group>"; };
+		5EA8A0B72A13048400D43B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EA8A0B92A130EED00D43B1C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +70,13 @@
 		5E4E84312A1080A70078C3C5 /* Message-Center-App */ = {
 			isa = PBXGroup;
 			children = (
+				5EA8A0A12A12DE6200D43B1C /* Resources */,
 				5E4E844D2A10814D0078C3C5 /* Controllers */,
-				5E4E84322A1080A70078C3C5 /* AppDelegate.swift */,
 				5E4E84462A10812D0078C3C5 /* Storyboards */,
+				5EA8A0A42A12E27100D43B1C /* Views */,
+				5EA8A0AF2A12F62600D43B1C /* Utils */,
+				5E4E84322A1080A70078C3C5 /* AppDelegate.swift */,
 				5E4E84342A1080A70078C3C5 /* SceneDelegate.swift */,
-				5E4E843B2A1080AA0078C3C5 /* Assets.xcassets */,
 				5E4E84402A1080AA0078C3C5 /* Info.plist */,
 			);
 			path = "Message-Center-App";
@@ -71,8 +85,8 @@
 		5E4E84462A10812D0078C3C5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				5EA8A0B62A13048400D43B1C /* Main.storyboard */,
 				5E4E84472A10812D0078C3C5 /* LaunchScreen.storyboard */,
-				5E4E84492A10812D0078C3C5 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -80,10 +94,38 @@
 		5E4E844D2A10814D0078C3C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E4E844E2A10814D0078C3C5 /* ResultsTableViewController.swift */,
 				5E4E844F2A10814D0078C3C5 /* LookupViewController.swift */,
+				5E4E844E2A10814D0078C3C5 /* ResultsTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5EA8A0A12A12DE6200D43B1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E4E843B2A1080AA0078C3C5 /* Assets.xcassets */,
+				5EA8A0A22A12DEA200D43B1C /* Poppins-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5EA8A0A42A12E27100D43B1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EA8A0A52A12E2FE00D43B1C /* SearchButton.swift */,
+				5EA8A0B22A13007300D43B1C /* EmailFormField.xib */,
+				5EA8A0B42A13009000D43B1C /* EmailFormField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EA8A0AF2A12F62600D43B1C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5EA8A0B02A12F63D00D43B1C /* UIColor+MessageCenter.swift */,
+				5EA8A0B92A130EED00D43B1C /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +186,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4E844C2A10812D0078C3C5 /* Main.storyboard in Resources */,
 				5E4E844B2A10812D0078C3C5 /* LaunchScreen.storyboard in Resources */,
 				5E4E843C2A1080AA0078C3C5 /* Assets.xcassets in Resources */,
+				5EA8A0B82A13048500D43B1C /* Main.storyboard in Resources */,
+				5EA8A0A32A12DEA200D43B1C /* Poppins-Regular.ttf in Resources */,
+				5EA8A0B32A13007300D43B1C /* EmailFormField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,10 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA8A0B52A13009000D43B1C /* EmailFormField.swift in Sources */,
+				5EA8A0B12A12F63D00D43B1C /* UIColor+MessageCenter.swift in Sources */,
+				5EA8A0A62A12E2FE00D43B1C /* SearchButton.swift in Sources */,
 				5E4E84502A10814D0078C3C5 /* ResultsTableViewController.swift in Sources */,
 				5E4E84332A1080A70078C3C5 /* AppDelegate.swift in Sources */,
 				5E4E84512A10814D0078C3C5 /* LookupViewController.swift in Sources */,
 				5E4E84352A1080A70078C3C5 /* SceneDelegate.swift in Sources */,
+				5EA8A0BA2A130EED00D43B1C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,10 +223,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		5E4E84492A10812D0078C3C5 /* Main.storyboard */ = {
+		5EA8A0B62A13048400D43B1C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5E4E844A2A10812D0078C3C5 /* Base */,
+				5EA8A0B72A13048400D43B1C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -304,7 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = MCAccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,7 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = MCAccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

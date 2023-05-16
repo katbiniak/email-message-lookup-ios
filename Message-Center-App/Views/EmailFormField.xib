@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailFormField" customModule="Message_Center_App" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomBorderView" destination="dc0-iz-NYu" id="4KG-ac-Ku4"/>
+                <outlet property="errorLabel" destination="uTc-Zy-imx" id="9K4-3w-6dl"/>
+                <outlet property="formTextField" destination="soc-aj-eM8" id="Msx-p1-bHI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="soc-aj-eM8">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                    <color key="tintColor" name="MCDarkBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pSk-6X-QuX"/>
+                    </constraints>
+                    <color key="textColor" name="MCDarkBlue"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
+                </textField>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-Zy-imx">
+                    <rect key="frame" x="0.0" y="51" width="393" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="N9Z-De-mfc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-iz-NYu">
+                    <rect key="frame" x="0.0" y="50" width="393" height="1"/>
+                    <color key="backgroundColor" name="MCDarkBlue"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="T7s-4t-NBL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dc0-iz-NYu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Axm-wx-mkh"/>
+                <constraint firstItem="uTc-Zy-imx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="F7a-Su-1DO"/>
+                <constraint firstItem="uTc-Zy-imx" firstAttribute="top" secondItem="dc0-iz-NYu" secondAttribute="bottom" id="ItH-gf-5eR"/>
+                <constraint firstItem="soc-aj-eM8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JWR-az-7H7"/>
+                <constraint firstAttribute="trailing" secondItem="soc-aj-eM8" secondAttribute="trailing" id="Ygb-zQ-OFv"/>
+                <constraint firstItem="soc-aj-eM8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zeb-u6-uIX"/>
+                <constraint firstItem="dc0-iz-NYu" firstAttribute="top" secondItem="soc-aj-eM8" secondAttribute="bottom" id="gjx-eH-WP0"/>
+                <constraint firstAttribute="bottom" secondItem="uTc-Zy-imx" secondAttribute="bottom" id="sJE-cj-xPK"/>
+                <constraint firstItem="uTc-Zy-imx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="snx-uN-d87"/>
+                <constraint firstAttribute="trailing" secondItem="dc0-iz-NYu" secondAttribute="trailing" id="wlS-ac-XLX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-48.091603053435115" y="-251.7605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MCDarkBlue">
+            <color red="0.058823529411764705" green="0.13333333333333333" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
