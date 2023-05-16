@@ -20,6 +20,11 @@
 		5EA8A0B52A13009000D43B1C /* EmailFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B42A13009000D43B1C /* EmailFormField.swift */; };
 		5EA8A0B82A13048500D43B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B62A13048400D43B1C /* Main.storyboard */; };
 		5EA8A0BA2A130EED00D43B1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0B92A130EED00D43B1C /* Constants.swift */; };
+		5EA8A0BE2A132C1300D43B1C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0BD2A132C1300D43B1C /* Message.swift */; };
+		5EA8A0C02A132C7900D43B1C /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8A0BF2A132C7800D43B1C /* MessageService.swift */; };
+		5EBCBD372A1348A700E65402 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBCBD352A1348A700E65402 /* MessageTableViewCell.swift */; };
+		5EBCBD382A1348A700E65402 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EBCBD362A1348A700E65402 /* MessageTableViewCell.xib */; };
+		5EBCBD3A2A134A2600E65402 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EBCBD392A134A2600E65402 /* Poppins-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		5EA8A0B42A13009000D43B1C /* EmailFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFormField.swift; sourceTree = "<group>"; };
 		5EA8A0B72A13048400D43B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EA8A0B92A130EED00D43B1C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5EA8A0BD2A132C1300D43B1C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5EA8A0BF2A132C7800D43B1C /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		5EBCBD352A1348A700E65402 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		5EBCBD362A1348A700E65402 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		5EBCBD392A134A2600E65402 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 			children = (
 				5EA8A0A12A12DE6200D43B1C /* Resources */,
 				5E4E844D2A10814D0078C3C5 /* Controllers */,
+				5EA8A0BC2A132B4700D43B1C /* Service */,
 				5E4E84462A10812D0078C3C5 /* Storyboards */,
 				5EA8A0A42A12E27100D43B1C /* Views */,
 				5EA8A0AF2A12F62600D43B1C /* Utils */,
@@ -104,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				5E4E843B2A1080AA0078C3C5 /* Assets.xcassets */,
+				5EBCBD392A134A2600E65402 /* Poppins-Bold.ttf */,
 				5EA8A0A22A12DEA200D43B1C /* Poppins-Regular.ttf */,
 			);
 			path = Resources;
@@ -115,6 +127,8 @@
 				5EA8A0A52A12E2FE00D43B1C /* SearchButton.swift */,
 				5EA8A0B22A13007300D43B1C /* EmailFormField.xib */,
 				5EA8A0B42A13009000D43B1C /* EmailFormField.swift */,
+				5EBCBD352A1348A700E65402 /* MessageTableViewCell.swift */,
+				5EBCBD362A1348A700E65402 /* MessageTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +140,15 @@
 				5EA8A0B92A130EED00D43B1C /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5EA8A0BC2A132B4700D43B1C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5EA8A0BD2A132C1300D43B1C /* Message.swift */,
+				5EA8A0BF2A132C7800D43B1C /* MessageService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E4E844B2A10812D0078C3C5 /* LaunchScreen.storyboard in Resources */,
+				5EBCBD382A1348A700E65402 /* MessageTableViewCell.xib in Resources */,
+				5EBCBD3A2A134A2600E65402 /* Poppins-Bold.ttf in Resources */,
 				5E4E843C2A1080AA0078C3C5 /* Assets.xcassets in Resources */,
 				5EA8A0B82A13048500D43B1C /* Main.storyboard in Resources */,
 				5EA8A0A32A12DEA200D43B1C /* Poppins-Regular.ttf in Resources */,
@@ -204,7 +229,10 @@
 				5EA8A0B52A13009000D43B1C /* EmailFormField.swift in Sources */,
 				5EA8A0B12A12F63D00D43B1C /* UIColor+MessageCenter.swift in Sources */,
 				5EA8A0A62A12E2FE00D43B1C /* SearchButton.swift in Sources */,
+				5EA8A0BE2A132C1300D43B1C /* Message.swift in Sources */,
+				5EBCBD372A1348A700E65402 /* MessageTableViewCell.swift in Sources */,
 				5E4E84502A10814D0078C3C5 /* ResultsTableViewController.swift in Sources */,
+				5EA8A0C02A132C7900D43B1C /* MessageService.swift in Sources */,
 				5E4E84332A1080A70078C3C5 /* AppDelegate.swift in Sources */,
 				5E4E84512A10814D0078C3C5 /* LookupViewController.swift in Sources */,
 				5E4E84352A1080A70078C3C5 /* SceneDelegate.swift in Sources */,
@@ -361,7 +389,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,7 +421,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
