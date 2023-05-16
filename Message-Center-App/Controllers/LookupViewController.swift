@@ -8,12 +8,16 @@
 import UIKit
 
 class LookupViewController: UIViewController {
-
+    
+    @IBOutlet weak var SearchButton: SearchButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func SearchButtonSelected(_ sender: SearchButton) {
+        sender.isLoading = true
+    }
 }
 
