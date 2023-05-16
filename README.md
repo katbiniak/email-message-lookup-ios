@@ -9,16 +9,14 @@ This repo contains the code to run the Message Center Application, an iOS applic
 
 ## Setup
 
-**Xcode Version: 14.3**
+**Xcode Version: 14.3**  
 
 No cocoa pods install is needed for running this application locally. Just download the project and open the .xcodeproj in Xcode.
+Min Supported iOS Version: 15.0+  
 
+Supported Devices: iPhone & iPad  
 
-Min Supported iOS Version: 15.0+
-
-Supported Devices: iPhone & iPad
-
-Supported Orientations: Portrait & Upside Down (all devices), Landscape (iPad Only)
+Supported Orientations: Portrait & Upside Down (all devices), Landscape (iPad Only)  
 
 ## File Structure
 
