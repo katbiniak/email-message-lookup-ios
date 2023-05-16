@@ -127,18 +127,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ufx-AM-gVV">
-                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <rect key="frame" x="0.0" y="60" width="393" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDC-rA-2PU">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="gcT-YK-6kM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G0g-Eh-US1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" name="MCAccentColor"/>
                         <constraints>
                             <constraint firstItem="Ufx-AM-gVV" firstAttribute="leading" secondItem="G0g-Eh-US1" secondAttribute="leading" id="19P-wX-MxL"/>
-                            <constraint firstItem="Ufx-AM-gVV" firstAttribute="top" secondItem="G0g-Eh-US1" secondAttribute="top" constant="20" id="OtQ-Dg-n5m"/>
+                            <constraint firstItem="LDC-rA-2PU" firstAttribute="top" secondItem="G0g-Eh-US1" secondAttribute="top" id="5aA-NC-YXx"/>
                             <constraint firstItem="G0g-Eh-US1" firstAttribute="trailing" secondItem="Ufx-AM-gVV" secondAttribute="trailing" id="QMH-9j-Fdd"/>
+                            <constraint firstItem="Ufx-AM-gVV" firstAttribute="top" secondItem="LDC-rA-2PU" secondAttribute="bottom" id="RFx-g3-A8C"/>
                             <constraint firstItem="G0g-Eh-US1" firstAttribute="bottom" secondItem="Ufx-AM-gVV" secondAttribute="bottom" id="W5J-lX-NOd"/>
+                            <constraint firstItem="LDC-rA-2PU" firstAttribute="leading" secondItem="G0g-Eh-US1" secondAttribute="leading" id="haE-h9-REB"/>
+                            <constraint firstItem="G0g-Eh-US1" firstAttribute="trailing" secondItem="LDC-rA-2PU" secondAttribute="trailing" id="pyL-Lz-Foa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OAm-Qk-AZy"/>
@@ -159,6 +169,9 @@
         <namedColor name="MCSteelBlue">
             <color red="0.23100000619888306" green="0.3059999942779541" blue="0.36500000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

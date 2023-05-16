@@ -25,13 +25,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message is Here Now, may go to 2 lines" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQM-Kb-Rgc">
-                        <rect key="frame" x="40" y="8" width="227" height="55"/>
+                        <rect key="frame" x="40" y="10" width="227" height="51"/>
                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/22/2022" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4S-rj-R1k">
-                        <rect key="frame" x="282" y="8" width="78" height="55"/>
+                        <rect key="frame" x="282" y="10" width="78" height="51"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="78" id="IVB-Mf-xN2"/>
                         </constraints>
@@ -49,13 +49,13 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="N4S-rj-R1k" firstAttribute="leading" secondItem="fQM-Kb-Rgc" secondAttribute="trailing" constant="15" id="7CE-0S-97b"/>
-                    <constraint firstAttribute="bottom" secondItem="fQM-Kb-Rgc" secondAttribute="bottom" constant="8" id="8tz-8P-AXh"/>
+                    <constraint firstAttribute="bottom" secondItem="fQM-Kb-Rgc" secondAttribute="bottom" constant="10" id="8tz-8P-AXh"/>
                     <constraint firstItem="TPJ-tV-aTQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JXa-vJ-uzB"/>
-                    <constraint firstItem="N4S-rj-R1k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Tl8-cU-wsF"/>
+                    <constraint firstItem="N4S-rj-R1k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Tl8-cU-wsF"/>
                     <constraint firstAttribute="trailing" secondItem="N4S-rj-R1k" secondAttribute="trailing" constant="40" id="fLU-Ph-NSj"/>
                     <constraint firstAttribute="trailing" secondItem="TPJ-tV-aTQ" secondAttribute="trailing" constant="20" id="iUx-Yi-FTc"/>
-                    <constraint firstItem="fQM-Kb-Rgc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="lNs-ny-MdT"/>
-                    <constraint firstAttribute="bottom" secondItem="N4S-rj-R1k" secondAttribute="bottom" constant="8" id="nFt-Tx-ixk"/>
+                    <constraint firstItem="fQM-Kb-Rgc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lNs-ny-MdT"/>
+                    <constraint firstAttribute="bottom" secondItem="N4S-rj-R1k" secondAttribute="bottom" constant="10" id="nFt-Tx-ixk"/>
                     <constraint firstItem="TPJ-tV-aTQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="psu-2t-uvd"/>
                     <constraint firstItem="fQM-Kb-Rgc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="tYM-ts-rMZ"/>
                 </constraints>
